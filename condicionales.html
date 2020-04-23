@@ -1,52 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Condicionales</title>
 </head>
+
 <body>
-    
+
     <script>
-        var nombre, num, sex, nvo, nv, nva, edad  ;
+        var nombre, num, sex, nvo, nv, nva, edad;
 
-         nombre = prompt("Ingresa tu nombre")
-         num = prompt("ingresa tu edad");
-         sex = prompt("1.Chico 2.Chica");
-         nv = true
+        nombre = prompt("Ingresa tu nombre")
+        num = prompt("ingresa tu edad");
+        sex = prompt("1.Chico 2.Chica");
+        nv = true
 
-        if (sex > 1 ) {
+        if (sex > 1) {
             nvo = prompt(nombre + '¿Tienes novio? 1.si 2.no');
-                if (nvo < 2 ) {
-                        edad = prompt("ingresa la edad de tu novio");
-                            if (edad < 18) {
-                                alert("Esa realacion es ilegal")
-                            } else {
-                                alert("disfruten una larga vida")
-                            }     
+            if (nvo < 2) {
+                edad = prompt("ingresa la edad de tu novio");
+                if (edad < 18) {
+                    alert("Esa realacion es ilegal")
                 } else {
-                    alert("Que sad");
+                    alert("disfruten una larga vida")
                 }
+            } else {
+                alert("Que sad");
+            }
 
         } else {
             nva = prompt(nombre + '¿Tienes novia? 1.si 2.no');
-                if (nva < 2 ) {
-                        edad = prompt("ingresa la edad de tu novia");  
-                        if (edad < 18) {
-                                alert("Esa realacion es ilegal")
-                            } else {
-                                alert("disfruten una larga vida")
-                            }     
+            if (nva < 2) {
+                edad = prompt("ingresa la edad de tu novia");
+                if (edad < 18) {
+                    alert("Esa realacion es ilegal")
                 } else {
-                    alert("Que sad");
+                    alert("disfruten una larga vida")
                 }
+            } else {
+                alert("Que sad");
+            }
         }
 
     </script>
-       
-       <button ><a class="text" href="condicionales.html">INGRESAR OTRO VALOR</a></button>
-        <button><a class="text" href="index.html">REGRESAR A INICIO</a></button>
+
+    <button><a class="text" href="condicionales.html">INGRESAR OTRO VALOR</a></button>
+    <button><a class="text" href="index.html">REGRESAR A INICIO</a></button>
 
 </body>
+
 </html>

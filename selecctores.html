@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/eso.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecctores</title>
+
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+
+        });
+
+        function cambiarcolores() {
+            $('#azul').css({ 'color': 'blue' });
+            $('#amarillo').css({ 'color': 'yellow' });
+            $('#verde').css({ 'color': 'green' });
+            $('#rojo').css({ 'color': 'red' });
+
+            alert('¿Lo ves?')
+        };
+
+
+    </script>
+
+</head>
+
+<body>
+
+
+    <div>
+        <article>
+            <p id="amarillo"> Yo soy amarillo </p>
+        </article>
+
+    </div>
+
+    <div>
+        <article>
+            <p id="azul"> Yo soy azul </p>
+        </article>
+
+    </div>
+
+    <div>
+        <article>
+            <p id="rojo"> Yo soy rojo </p>
+        </article>
+
+    </div>
+
+    <div>
+        <article>
+            <p id="verde"> Yo soy verde </p>
+        </article>
+
+    </div>
+    <button onclick="cambiarcolores()"> Obtener colores </button>
+    <button ><a class="text" href="selecctores.html">REINICIAR PAGINA</a></button>
+    <button><a class="text" href="index.html">REGRESAR A INICIO</a></button>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clases CSS</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#prueba").click(function () {
+                $("#texto").addClass("clase1");
+
+            });
+
+            $("#prueba2").click(function () {
+                $("#texto2").removeClass("clase1");
+
+            });
+
+            $("#prueba3").click(function () {
+                $("#texto3").toggleClass("clase1");
+
+            });
+            $("#prueba4").click(function () {
+                $("#texto4").toggleClass("clase1");
+                
+                if ($("#texto4").has("clase1")) {
+                    $("#texto4").text("Hey soy azul");
+                }
+
+
+
+            });
+        });
+
+    </script>
+
+</head>
+
+<body>
+
+    <div id="prueba">
+        <p id="texto"> Haz un click en mi </p>
+    </div>
+    <hr>
+    <br>
+    <br>
+    <div id="prueba2">
+        <p id="texto2" class="clase1"> Haz un click en mi </p>
+    </div>
+    <hr>
+    <br>
+    <br>
+    <div id="prueba3">
+        <p id="texto3"> Haz dos click en mi </p>i
+    </div>
+    <hr>
+    <br>
+    <br>
+    <div id="prueba4">
+        <p id="texto4"> haz varios click en mi </p>
+    </div>
+    <hr>
+    <br>
+    <br>
+    
+    <style>
+        .clase1 {
+             background-color: royalblue;
+             color: seashell;
+        }
+
+        p {
+            text-align: center;
+        }
+    </style>
+ <button ><a class="text" href="clasescss.html">REINICIAR PAGINA</a></button>
+ <button><a class="text" href="index.html">REGRESAR A INICIO</a></button>
+</body>
+
+</html>

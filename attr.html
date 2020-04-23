@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attr</title>
+
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('a').click(function (e) {
+                e.preventDefault();
+                var link = $(this).attr('href');
+                alert("Usted saldrá de la pagina ¿Desea continuar?")
+                location.href = link;
+            })
+
+        });
+
+    </script>
+
+</head>
+
+<body>
+    <a href="http://youtube.com">Ir a youtube</a>
+
+    <style>
+        a {
+            font-size: xx-large;
+        }
+    </style>
+    <hr>
+    <br>
+    <button><a class="text" href="attr.html">REINICIAR PAGINA</a></button>
+    <button><a class="text" href="index.html">REGRESAR A INICIO</a></button>
+</body>
+
+</html>

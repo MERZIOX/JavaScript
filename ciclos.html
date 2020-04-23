@@ -1,64 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" href="css/style.css">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ciclos</title>
 </head>
+
 <body>
 
 
     <script>
 
-       
-var num1, num2, preg, resul, sw;
+
+        var num1, num2, preg, resul, sw;
         sw = 3;
-    do {
-        
-    
-                preg = parseInt(prompt("1.Sumar 2.Restar 3.Multiplicar 4.Salir" ));
-                num1 = parseInt(prompt("ingresa primer numero"));
-                num2 = parseInt(prompt("ingresa segundo numero"));
+        do {
 
-                function sumar() {
+
+            preg = parseInt(prompt("1.Sumar 2.Restar 3.Multiplicar 4.Salir"));
+            num1 = parseInt(prompt("ingresa primer numero"));
+            num2 = parseInt(prompt("ingresa segundo numero"));
+
+            function sumar() {
                 resul = num1 + num2;
-                alert("El resultado de su suma es: " + resul );    
-                } 
-                
-                function restar() {
+                alert("El resultado de su suma es: " + resul);
+            }
+
+            function restar() {
                 resul = num1 - num2;
-                alert("El resultado de su resta es: " + resul );    
-                } 
+                alert("El resultado de su resta es: " + resul);
+            }
 
-                function multiplicar() {
+            function multiplicar() {
                 resul = num1 * num2;
-                alert("El resultado de tu multiplicacion es: " + resul );    
-                } 
+                alert("El resultado de tu multiplicacion es: " + resul);
+            }
 
-        switch(preg) {
-        case 1:
-                sumar();
-            break;
-        case 2:
-                restar();
-            break;
-        case 3: 
-                multiplicar();
-            break
-        case 4:
-                sw = sw + 5;
-            break;
-        default:
-            alert("Seleccione 1 - 4 ")
-        }
+            switch (preg) {
+                case 1:
+                    sumar();
+                    break;
+                case 2:
+                    restar();
+                    break;
+                case 3:
+                    multiplicar();
+                    break
+                case 4:
+                    sw = sw + 5;
+                    break;
+                default:
+                    alert("Seleccione 1 - 4 ")
+            }
 
-    } while (sw < 4);
+        } while (sw < 4);
 
     </script>
 
-<button ><a class="text" href="ciclos.html">INGRESAR OTRO VALOR</a></button>
-<button><a class="text" href="index.html">REGRESAR A INICIO</a></button>
+    <button><a class="text" href="ciclos.html">INGRESAR OTRO VALOR</a></button>
+    <button><a class="text" href="index.html">REGRESAR A INICIO</a></button>
 
 </body>
+
 </html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodo CSS</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#cambios").click(function () {
+                $("#item1").css("color", "royalblue");
+                $('#item2').css("color", "red");
+                var h1cambios = {
+                    "background": "black",
+                    "color": "yellow"
+                }
+                var alinear = {
+                    "text-align": "center"
+                }
+                $("h1").css(h1cambios);
+                $("h1").css(alinear);
+
+                $("#item1").css(alinear);
+                $("#item2").css(alinear);
+
+                $("#item1").text("gracias ya soy rojo y me centraste");
+                $("#item2").text("gracias ya soy azul y me centraste");
+                $("h1").text("Gracias por cumplir nuestros deseos");
+            });
+        });
+
+    </script>
+
+</head>
+
+<body>
+    <h1>Yo debo estar centrado y ser amarillo con fondo negro </h1>
+    <div id="item1"> Yo debo ser azul</div>
+    <div id="item2">Yo debo ser rojo</div>
+
+    <button id="cambios"> cumplir deseos </button>
+    <hr>
+    <br>
+    <button ><a class="text" href="metodocss.html">REINICIAR PAGINA</a></button>
+    <button><a class="text" href="index.html">REGRESAR A INICIO</a></button>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos</title>
+</head>
+<body>
+    
+    <script>
+
+        var Gato = new gato('Sr. Gato');
+        var GatoDos = new gato('Michi');
+
+        function gato(nombre)
+        {
+            this.nombre = nombre;
+
+            this.maulla = function(){
+                alert(this.nombre + ": "+ 'Miawww');
+            };
+        } 
+        alert('el Gato se llama: ' + Gato.nombre);
+        alert('el Gato se llama: ' + GatoDos.nombre);
+        Gato.maulla();        
+        
+    </script>
+ <button ><a class="text" href="objetos.html">REINICIAR PAGINA</a></button>
+ <button><a class="text" href="index.html">REGRESAR A INICIO</a></button>
+</body>
+</html>

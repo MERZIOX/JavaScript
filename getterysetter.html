@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getter y Setter</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            //este metodo sirve para OBTENER el id
+            var clase = $('#prueba').attr("id");
+            console.log(clase);
+            //Este metodo ASIGNA un valor 
+            $("#Prueba").attr("class", "ejemplo");
+
+        });
+
+    </script>
+</head>
+
+<body>
+    <p id="parrafo"> <strong> Hola jquery </strong></p>
+    <div id="prueba"> </div>
+
+    <button ><a class="text" href="getterysetter.html">REINICIAR PAGINA</a></button>
+    <button><a class="text" href="index.html">REGRESAR A INICIO</a></button>
+
+</body>
+
+</html>
